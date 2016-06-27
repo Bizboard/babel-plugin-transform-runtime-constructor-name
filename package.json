@@ -1,0 +1,28 @@
+{
+  "name": "babel-plugin-transform-runtime-constructor-name",
+  "version": "1.0.0",
+  "description": "Allows Arva controllers and models to be minified and still know their runtime names",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bizboard/babel-plugin-transform-runtime-constructor-name.git"
+  },
+  "keywords": [
+    "babel",
+    "minify",
+    "constructor",
+    "name"
+  ],
+  "author": "Tom Clement, Bizboard",
+  "license": "NPOSL-3.0",
+  "bugs": {
+    "url": "https://github.com/Bizboard/babel-plugin-transform-runtime-constructor-name/issues"
+  },
+  "homepage": "https://github.com/Bizboard/babel-plugin-transform-runtime-constructor-name#readme",
+  "dependencies": {
+    "babel-types": "^6.10.2"
+  }
+}
