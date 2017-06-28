@@ -9,7 +9,7 @@ export default function({ types: t }) {
         visitor: {
             Class(path) {
                 let superClassName = path.node.superClass.name;
-                if(superClassName === 'Controller' || superClassName === 'Model' || superClassName === 'PrioritisedArray') {
+                if(superClassName.includes('Controller') || superClassName.includes('Model') || superClassName.includes('PrioritisedArray')) {
                     let name = path.node.id.name;
                     let nameMethod = t.classMethod('get', t.Identifier('_name'), [], t.blockStatement([
                         t.returnStatement(t.stringLiteral(name))
