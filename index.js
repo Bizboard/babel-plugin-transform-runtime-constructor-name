@@ -4,7 +4,7 @@
  * @param t
  * @returns {{visitor: {Class: (function(*=))}}}
  */
-export default function({ types: t }) {
+module.exports = function({ types: t }) {
     return {
         visitor: {
             Class(path) {
