@@ -8,7 +8,7 @@ module.exports = function({ types: t }) {
     return {
         visitor: {
             Class(path) {
-                let superClassName = path.node.superClass.name;
+                let superClassName = path.node.superClass && path.node.superClass.name;
                 if(superClassName === 'Controller' || superClassName === 'Model' || superClassName === 'PrioritisedArray') {
                     let name = path.node.id.name;
                     let nameMethod = t.classMethod('get', t.Identifier('_name'), [], t.blockStatement([
